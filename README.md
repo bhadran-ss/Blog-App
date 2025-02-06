@@ -21,28 +21,25 @@ Users can view a list of all public blog posts on the homepage.
 Clicking on a post will take users to a detailed view of the blog post.
 The app displays the title, author, content, and image of each post.
 3. Make Posts Public or Private
-Public Posts:
-
-Public posts are visible to all users.
+Public Posts:Public posts are visible to all users.
 These posts are displayed in the homepage feed and can be interacted with (commented on).
-Private Posts:
-
-Private posts are only visible to the user who created them.
+Private Posts:Private posts are only visible to the user who created them.
 These posts are hidden from the general feed, and the user can view them from their own dashboard or private feed.
+
+
 4. Comment on Public Posts
-Commenting on Public Posts:
-Users can comment on any public post.
+Commenting on Public Posts:Users can comment on any public post.
 Each post contains a comment section where users can write and submit comments.
 Comments are stored in local state (for frontend simulation) and displayed under the corresponding post.
 5. Search and Paginate Posts
-Search Functionality:
-
-Users can search for posts by title or content using a search bar.
+Search Functionality:Users can search for posts by title or content using a search bar.
 As users type, the displayed posts are filtered dynamically based on the search query.
-Pagination:
 
-To manage large lists of posts, the app implements pagination.
+
+Pagination:To manage large lists of posts, the app implements pagination.
 Users can navigate between pages of posts, and only a subset of posts is displayed on each page.
+
+
 Technologies Used
 Frontend
 React: JavaScript library for building the user interface.
@@ -51,9 +48,6 @@ Tailwind CSS: Utility-first CSS framework for styling the app.
 Local Storage: Used for simulating authentication tokens and storing temporary data (such as created posts and comments).
 useState / useContext: Used for managing state locally and globally (e.g., blog posts, comments, authentication).
 Project Structure
-bash
-Copy
-Edit
 src/
 |-- components/              # React components
 |   |-- Header.js            # Contains navigation, login, and sign-up buttons
@@ -68,6 +62,7 @@ src/
 |   |-- BlogContext.js       # Provides global state for posts, comments, and user session
 |-- App.js                   # Main app component with routing and layout
 |-- index.js                 # Entry point of the application
+
 How to Run the Application
 Clone the Repository:
 
